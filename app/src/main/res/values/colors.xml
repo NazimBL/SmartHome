@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#884EA0</color>
+    <color name="yellow">#F1C40F</color>
+    <color name="blue">#85C1E9</color>
+    <color name="red">#E74C3C</color>
+    <color name="jarvis">#A93226</color>
+    <color name="power">#A04000</color>
+    <color name="hvoc">#7DCEA0</color>
+    <color name="door">#AAB7B8</color>
+    <color name="fond">#154360</color>
+
+
+
+
+</resources>

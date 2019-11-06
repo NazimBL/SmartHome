@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.dell.nfcommunication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/power_layout"
+            android:background="@color/power"
+            >
+
+<ImageView
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:id="@+id/power_img"
+    android:layout_gravity="center"
+    android:src="@drawable/power"
+    />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/jarvis"
+            android:background="@color/jarvis"
+            >
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="20dp"-->
+                <!--android:id="@+id/jarvis_text"-->
+                <!--android:text="Jarvis"-->
+                <!--android:textColor="#ffffff"-->
+                <!--/>-->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/jarvis_img"
+                android:layout_gravity="center"
+                android:src="@drawable/jarvis"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+          <LinearLayout
+            android:layout_width="100dp"
+            android:background="@color/yellow"
+            android:layout_marginRight="5dp"
+              android:orientation="vertical"
+              android:id="@+id/light_layout"
+            android:layout_height="100dp">
+
+              <ImageView
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:id="@+id/light_img"
+                  android:layout_marginTop="1dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/light"
+                  />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+
+                  android:id="@+id/light_text"
+                  android:text="Lighting"
+                  />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/hvoc"
+            android:orientation="vertical"
+            android:id="@+id/fan_img"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fan2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/fan_text"
+                android:text="Off"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/door"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:id="@+id/garage_img"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                android:src="@drawable/garage"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/garage_text"
+                android:text="Closed"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:background="@color/red"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:id="@+id/temp_layout"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/temp_img"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/temp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/temp_text"
+                android:text="Temperature:"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:id="@+id/humidity_layout"
+            android:background="@color/blue"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/hum_img"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/drop"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/hum_text"
+                android:text="Humidity:"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:id="@+id/batlayout"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/bat_img"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/battery"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/bat_text"
+                android:text="Battery:"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect"
+        android:text=" Connect "
+        android:textSize="20dp"
+
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
